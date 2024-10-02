@@ -7,9 +7,10 @@ import org.springframework.stereotype.Repository
 class SongRepository {
     val songs = listOf(
         Song(1, "supernova", "aespa"),
-        Song(2, "Bruno", "talking"),
-        Song(3, "Post", "Chemi"),
+        Song(2,  "talking","Bruno"),
+        Song(3,  "Chemi","Post"),
     )
 
     fun fetchSong() = songs;
+    fun getSong(index: Int) = songs[index]
 }
